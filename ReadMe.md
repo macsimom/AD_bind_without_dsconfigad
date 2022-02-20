@@ -2,6 +2,8 @@ Place the files in ```/Users/Shared``` on the OS drive
 
 Modify ```ADInfo.plist``` to your Active Directory
 
+```SVCAccountName``` and ```SVCPassword``` are the credentials of an AD user with the privileges to bind a machine to the domain.
+
 Boot in recovery (if not already)
 
 run ```/Volumes/Macintosh HD/Users/Shared/setup_opendirectory_in_recovery.sh```
