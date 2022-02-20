@@ -1,4 +1,4 @@
-#Background
+# Background
 
 Microsoft changed Kerberos PAC handling with update [KB5008380](https://support.microsoft.com/en-us/topic/kb5008380-authentication-updates-cve-2021-42287-9dafac11-e0d0-4cb8-959a-143bd0201041) and it seems to break binding Macs to Active Directory using ```dsconfigad```
 
@@ -19,7 +19,7 @@ The Mac and AD are then in agreement and the Mac is for all intents and purposes
 * Periodic computer password rotation (`dsconfig -passinterval`) also appears to function as expected.
 * Configuring sshd on the Mac to accept GSSAPI credentials also appears to work as expected.
 
-#How to
+# How to
 
 Place the files in ```/Users/Shared``` on the OS drive
 
@@ -35,6 +35,6 @@ Reboot the Mac
 
 Mac is bound despite [KB5008380](https://support.microsoft.com/en-us/topic/kb5008380-authentication-updates-cve-2021-42287-9dafac11-e0d0-4cb8-959a-143bd0201041) having ```PacRequestorEnforcement``` set to 2
 
-#To Do
+# To Do
 
 * Clean up (you should definitely delete the ADInfo.plist containing the credentials when done)
