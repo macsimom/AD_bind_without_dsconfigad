@@ -4,7 +4,7 @@ Microsoft changed Kerberos PAC handling with update [KB5008380](https://support.
 
 Initial suggestions on how to bind if it's still required range from "don't activate full enforcement" to "forget about binding" neither of which seem acceptable.
 
-So I tried manually modifying the opendirectory plist file that constitutes an AD bind and placing it in the appropriate location in tandem with adding valid machine credentials to the System keychain in order configure the Mac as bound. Fake it till you make it.
+So I tried manually modifying the opendirectory plist file that constitutes an AD bind and placing it in the appropriate location in tandem with adding valid machine credentials to the System keychain in order to configure the Mac as bound. Fake it till you make it.
 
 The procedure boils down to:
 
